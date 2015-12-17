@@ -13,3 +13,120 @@
  *= require_tree .
  *= require_self
  */
+ 
+*{
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; 
+  margin: 0;
+  padding: 0;
+}
+#header {
+  height: 100px;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 900px;
+  position: relative;
+  
+}
+
+#header ul {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+#logo {
+  float: right !important;
+  margin-right: 0 !important;
+}
+
+#header ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+  font-weight: 500;
+  font-size: 18px;  
+
+}
+
+#header ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#header ul li a:hover {
+  text-decoration: underline;
+}
+
+#footer {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  height: 150px;
+}
+#footer a i {
+  font-size: 25px;
+  margin-left: 10px;
+  color: black;
+}
+
+#footer div {
+  float: right;
+}
+
+#indexJumbo {
+  width: 100%;
+  position: relative;
+  margin-bottom: 40px;
+  min-height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  background-size: cover;
+  background-image: url('http://www.picmet.org/conferences/2005/images/portland3.jpg');
+}
+
+#indexContent {
+  position: absolute;
+  top: 150px;
+  right: 100px;
+  width: 50%;
+  height: 60%;
+}
+
+#indexContent h1 {
+  text-align: right;
+  color: white;
+  font-size: 40px;
+  
+}
+
+#indexContent span {
+  background-color: white;
+  color: black;
+  padding: 5px;
+}
+
+#indexContent #viewWorks {
+  width: 200px;
+  height: 60px;
+  background-color: black;   
+  float: right;
+  margin: 40px 0;
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+  position: relative;
+}
+
+#indexContent #viewWorks:hover {
+  background-color: #ff66ff;
+}
+
+#viewWorks a {
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+}
+

@@ -5,10 +5,37 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,500,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 </head>
 <body>
+  <div id='header'>
+    <ul>
+      <li><%= link_to "Welcome", root_path %></li>
+      <li><%= link_to "Portfolio", portfolio_path %></li>
+      <li><%= link_to "Resume", resume_path %></li>
+      <li><%= link_to "About", about_path %></li>
+      <li><%= link_to "Contact", contact_path %></li>
+      <li id='logo'>Jing Wait</li>
+    </ul>
+     
+  </div>
+  
+  <div class="">
+    <%= yield %>
+  </div>
 
-<%= yield %>
+
+  <div class="" id='footer'> 
+    <div class="">
+      <a href="https://github.com/lovedoodle"><i class="fa fa-github-alt footerFa"></i></a>
+      <a href='https://www.linkedin.com/in/jingwait'><i class="fa fa-linkedin footerFa"></i></a>  
+      <a href=''><i class="fa fa-twitter footerFa"></i></a>
+       
+    </div>
+        
+  </div>
 
 </body>
 </html>
