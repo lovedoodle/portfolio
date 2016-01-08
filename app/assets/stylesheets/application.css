@@ -25,8 +25,7 @@
   width: 90%;
   margin: 0 auto;
   max-width: 900px;
-  position: relative;
-  
+  position: relative;  
 }
 
 #header ul {
@@ -129,4 +128,27 @@
   top: 20px;
   left: 40px;
 }
+
+.content {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+#contact div {
+  font-size: 50px;
+  margin-bottom: 40px;
+  color: black;
+  margin-top: 30px;
+}
+
+#contact a i {
+  color: black;
+  padding: 30px;
+  font-size: 80px;
+  margin-bottom: 60px;
+}
+ 
+
 
