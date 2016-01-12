@@ -13,10 +13,10 @@
  *= require_tree .
  *= require_self
  */
- 
+
 *{
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -25,7 +25,7 @@
   width: 90%;
   margin: 0 auto;
   max-width: 900px;
-  position: relative;  
+  position: relative;
 }
 
 #header ul {
@@ -43,7 +43,7 @@
   display: inline-block;
   margin-right: 20px;
   font-weight: 500;
-  font-size: 18px;  
+  font-size: 18px;
 
 }
 
@@ -56,10 +56,11 @@
   text-decoration: underline;
 }
 
+/* footer css*/
 #footer {
   width: 90%;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 30px auto;
   height: 150px;
 }
 #footer a i {
@@ -96,7 +97,7 @@
   text-align: right;
   color: white;
   font-size: 40px;
-  
+
 }
 
 #indexContent span {
@@ -108,7 +109,7 @@
 #indexContent #viewWorks {
   width: 200px;
   height: 60px;
-  background-color: black;   
+  background-color: black;
   float: right;
   margin: 40px 0;
   color: white;
@@ -128,7 +129,7 @@
   top: 20px;
   left: 40px;
 }
-
+/* contact style*/
 .content {
   width: 90%;
   max-width: 900px;
@@ -149,7 +150,7 @@
   font-size: 80px;
   margin-bottom: 60px;
 }
- 
+
  /*resume page css*/
 
  .resumeContainer {
@@ -204,3 +205,38 @@
  	font-size: 15px;
  }
 
+ /* about page style*/
+.about {
+  width: 90%;
+  max-width: 900px;
+  margin: 50px auto;
+  height: 500px;
+}
+ .aboutText {
+  display: inline-block;
+  float: left;
+  word-wrap: break-word;
+  text-align: right;
+  word-wrap: break-word;
+  width: 450px;
+  height: 450px;
+  margin: 20px 0px;
+ }
+
+ .aboutText h1 {
+  font-size: 48px;
+  word-wrap: break-word;
+
+ }
+
+ .aboutImg {
+   background-image:url("https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-ash2/v/t1.0-9/561171_10150915785632592_1683463462_n.jpg?oh=26418307b6fe040504213fd4ea7615af&oe=570A2B9D");
+   width: 450px;
+   height: 450px;
+   background-position: center;
+   background-size: cover;
+   display: inline-block;
+   float: left;
+   margin: 20px 0px;
+
+ }
