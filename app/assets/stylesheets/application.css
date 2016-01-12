@@ -150,5 +150,57 @@
   margin-bottom: 60px;
 }
  
+ /*resume page css*/
 
+ .resumeContainer {
+ 	margin: 0 auto;
+ 	width: 700px;
+ 	height: auto;
+ 	min-height: 500px;
+ }
+
+ /*body > * {
+ 	font-family: 'Sanchez', serif;
+ 	width: 700px;
+ }*/
+.resumeContainer p {
+  font-size: 20px;
+}
+
+.resumeContainer ul {
+ 	margin: 0px;
+ 	padding: 0px;
+ 	padding-left: 50px;
+  font-size: 20px;
+ }
+
+ .header {
+ 	font-size: 55px;
+ 	font-weight: 400;
+ 	text-align: center;
+ }
+
+ .subHeader {
+ 	text-align: center;
+ }
+
+ .resumeContainer {
+ 	padding: 25px 10px;
+ }
+
+ .sectionHeader {
+ 	font-style: italic;
+ 	font-size: 25px;
+ 	margin-top: 20px;
+ 	border-bottom: 1px solid #BBB;
+ 	padding-bottom: 5px;
+ }
+
+ .companyText {
+ 	margin-left: 50px;
+  margin-top: 15px;
+ 	font-style: italic;
+ 	color: black;
+ 	font-size: 15px;
+ }
 
