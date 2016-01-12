@@ -218,15 +218,22 @@
   word-wrap: break-word;
   text-align: right;
   word-wrap: break-word;
-  width: 450px;
+  width: 400px;
   height: 450px;
-  margin: 20px 0px;
+  margin: 20px 0px 20px 20px;
+  padding: 10px;
+  font-weight: lighter;
  }
 
  .aboutText h1 {
   font-size: 48px;
   word-wrap: break-word;
+  margin-bottom: 20px;
+ }
 
+ .aboutText p {
+   text-align: left;
+   margin-bottom: 15px;
  }
 
  .aboutImg {
@@ -238,5 +245,6 @@
    display: inline-block;
    float: left;
    margin: 20px 0px;
+   padding: 10px;
 
  }
