@@ -60,8 +60,10 @@
 #footer {
   width: 90%;
   max-width: 900px;
+  min-width: 500px;
   margin: 30px auto;
   height: 150px;
+  clear: both;
 }
 #footer a i {
   font-size: 25px;
@@ -209,7 +211,7 @@
 .about {
   width: 90%;
   max-width: 900px;
-  margin: 50px auto;
+  margin: 30px auto;
   height: 500px;
 }
  .aboutText {
@@ -218,9 +220,9 @@
   word-wrap: break-word;
   text-align: right;
   word-wrap: break-word;
-  width: 400px;
-  height: 450px;
-  margin: 20px 0px 20px 20px;
+  width: 45%;
+  height: 80%;
+
   padding: 10px;
   font-weight: lighter;
  }
@@ -238,13 +240,33 @@
 
  .aboutImg {
    background-image:url("https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-ash2/v/t1.0-9/561171_10150915785632592_1683463462_n.jpg?oh=26418307b6fe040504213fd4ea7615af&oe=570A2B9D");
-   width: 450px;
-   height: 450px;
+   width: 45%;
+   height: 80%;
    background-position: center;
    background-size: cover;
    display: inline-block;
    float: left;
-   margin: 20px 0px;
+   margin-right: 20px;
    padding: 10px;
 
  }
+
+ /* portfolio css */
+
+ .portfolioJumbo {
+   width: 100%;
+   margin: 0;
+   background-image: url("http://boast.io/wp-content/uploads/2014/07/DeathtoStock_Desk3.jpg");
+   height: 400px;
+   background-position: center;
+   background-size: cover;
+ }
+
+ /* media queries */
+
+ @media screen and (max-width: 500px) {
+  .aboutText {
+    width: 600px;
+  }
+
+}
