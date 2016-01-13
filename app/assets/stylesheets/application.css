@@ -162,24 +162,25 @@
 
  .resumeContainer {
  	margin: 0 auto;
- 	width: 700px;
  	height: auto;
  	min-height: 500px;
+  max-width: 900px;
  }
 
- /*body > * {
- 	font-family: 'Sanchez', serif;
- 	width: 700px;
- }*/
-.resumeContainer p {
-  font-size: 20px;
+
+.resumeContainer {
+  font-size: 18px;
+}
+
+.sectionContent {
+
 }
 
 .resumeContainer ul {
  	margin: 0px;
  	padding: 0px;
  	padding-left: 50px;
-  font-size: 20px;
+  font-size: 18px;
  }
 
  .header {
@@ -188,10 +189,20 @@
  	text-align: center;
  }
 
- .subHeader {
- 	text-align: center;
+ .centerWrap {
+  text-align: center;
  }
 
+ .subHeader {
+
+  display: inline-block;
+  padding: 5px;
+  margin-left: 15px;
+ }
+.subHeader a {
+  text-decoration: none;
+  color: black;
+}
  .resumeContainer {
  	padding: 25px 10px;
  }
@@ -206,11 +217,15 @@
 
  .companyText {
  	margin-left: 50px;
-  margin-top: 15px;
  	font-style: italic;
  	color: black;
- 	font-size: 15px;
+ 	font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: bold;
  }
+.workContent {
+  margin-bottom: 20px;
+}
 
  /* about page style*/
 .about {
@@ -270,7 +285,7 @@
 
 .projectsWrap {
   max-width: 900px;
-  margin: 20px auto;
+  margin: 40px auto;
   height: auto;
 }
 
