@@ -9,26 +9,26 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 </head>
-<body>
-  <div id='header'>
-    <ul>
-      <li><%= link_to "Welcome", root_path %></li>
-      <li><%= link_to "About", about_path %></li>
-      <li><%= link_to "Portfolio", portfolio_path %></li>
-      <li><%= link_to "Resume", resume_path %></li>
-      <li><%= link_to "Contact", contact_path %></li>
-      <li id='logo'>Jing Wait</li>
-    </ul>
-
+<body class="container">
+  <div id='header' class="row nav"> 
+    <div class="col-md-10 col-md-offset-1">
+      <ul>
+        <li><%= link_to "Welcome", root_path %></li>
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Portfolio", portfolio_path %></li>
+        <li><%= link_to "Resume", resume_path %></li>
+      </ul>
+    </div>   
+    
   </div>
 
-  <div class="main">
+  <div class="row main">
     <%= yield %>
   </div>
 
 
-  <div class="" id='footer'>
-    <div class="">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 footer">
       <a href="https://github.com/lovedoodle"><i class="fa fa-github-alt footerFa"></i></a>
       <a href='https://www.linkedin.com/in/jingwait'><i class="fa fa-linkedin footerFa"></i></a>
       <a href='https://twitter.com/JingWait'><i class="fa fa-twitter footerFa"></i></a>

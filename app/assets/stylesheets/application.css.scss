@@ -1,0 +1,105 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ 
+@import "bootstrap-sprockets";
+@import "bootstrap";
+ 
+*{
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.container {
+  width: 100%;
+}
+// Header navigation 
+.nav ul li {
+  display: inline-block;
+  line-height: none;
+  padding: 30px 30px 30px 0px;
+  a {
+    color: black;
+  }
+}
+
+// about page css
+.aboutImg {
+  padding: 20px;
+  img {
+    width: 100%;
+    height: 70%;
+  }
+}
+.aboutText {
+  padding: 20px;
+  p {
+    font-weight: lighter;
+  }
+}
+ 
+// welcome page css
+
+.indexJumbo {
+  height: 600px;
+  background: url("welcome/welcome.jpg");
+  background-repeat:no-repeat;
+  // background-color: (0,0,0,0.5);
+  background-size: cover;
+  background-position: bottom;
+  span {
+    margin-top: 20px;
+    padding: 15px;
+    float: right;
+    background-color: black;
+    a {
+      font-size: 20px;
+      color: white;
+      font-weight: lighter;
+    }  
+    a:hover {
+      text-decoration: none;
+    }  
+  }
+  #viewWorks:hover {
+    background-color: #ff00ff;
+    cursor: pointer;
+    
+  }
+  h1 {
+    margin-top: 20px;
+    text-align: right;
+    color: white;
+    font-size: 50px;
+  }
+}
+
+
+// footer css 
+.footer a{
+  float: right;
+  margin: 10px 0px;
+  i {
+    font-size: 30px;
+    padding: 10px;
+    color: black;
+  }
+}
+
+
+ 
