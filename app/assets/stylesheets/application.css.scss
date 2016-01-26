@@ -13,10 +13,10 @@
  *= require_tree .
  *= require_self
  */
- 
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
- 
+
 *{
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
@@ -28,7 +28,7 @@
 .container {
   width: 100%;
 }
-// Header navigation 
+// Header navigation
 .nav ul li {
   display: inline-block;
   line-height: none;
@@ -52,7 +52,7 @@
     font-weight: lighter;
   }
 }
- 
+
 // welcome page css
 
 .indexJumbo {
@@ -71,15 +71,15 @@
       font-size: 20px;
       color: white;
       font-weight: lighter;
-    }  
+    }
     a:hover {
       text-decoration: none;
-    }  
+    }
   }
   #viewWorks:hover {
     background-color: #ff00ff;
     cursor: pointer;
-    
+
   }
   h1 {
     margin-top: 20px;
@@ -89,8 +89,40 @@
   }
 }
 
+// resume page css
 
-// footer css 
+.resumeHeader {
+  text-align: center;
+  ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 10px;
+    a {
+      color: black;
+    }
+  }
+}
+
+.resumeSkills {
+  ul li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 20px;
+  }
+}
+.resumeWrap {
+  li {
+    font-weight: lighter;
+  }
+  p{
+    font-weight: lighter;
+  }
+  a {
+    font-weight: lighter;
+  }
+}
+
+// footer css
 .footer a{
   float: right;
   margin: 10px 0px;
@@ -100,6 +132,3 @@
     color: black;
   }
 }
-
-
- 
