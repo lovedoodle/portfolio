@@ -122,6 +122,36 @@
   }
 }
 
+// portfolio page css
+
+.projectDiv {
+  padding: 5px;
+  height: 150px;
+  .projectDiv:hover {
+    h3 {
+      color: #ff00ff;
+    }
+
+
+
+
+  }
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  img {
+    width: 98%;
+    height: 60%;
+  }
+  h3 {
+    font-weight: lighter;
+  }
+  p {
+    font-weight: lighter;
+  }
+}
+
 // footer css
 .footer a{
   float: right;
