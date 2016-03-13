@@ -29,6 +29,7 @@
 .container {
   width: 100%;
 }
+ 
 // Header navigation
 .nav ul li {
   display: inline-block;
@@ -91,6 +92,9 @@
 }
 
 // resume page css
+#printResumeContact {
+  display: none;
+}
 .resumeWrap {
   color: #595959;
 }
@@ -128,14 +132,18 @@
 
 .projectDiv {
   padding: 10px;
-  height: 150px;
+  height: 450px;
   a {
     color: black;
     text-decoration: none;
   }
-  img {
+  .projectsImg {
     width: 98%;
     height: 60%;
+    img {
+      width: 99%;
+      height: 99%;
+    }
   }
   h3 {
     font-weight: lighter;
@@ -155,7 +163,7 @@
 }
 
 // footer css
-.footer a{
+#footer a{
   float: right;
   margin: 10px 0px;
   i {
@@ -165,16 +173,38 @@
   }
 }
 
+@media print { 
+ /* All your print styles go here */
+ #header, #footer { display: none !important; }
+ #resumeContact {
+   display: none;
+ }
+ #printResumeContact {
+   display: inline-block;
+   margin: 0;
+ }
+ body {
+   font-size: 70%;
+ }
+ p {
+   margin: 0;
+ }
+ h2, h3 {
+   margin-top: 6px;
+   margin-bottom: 3px;
+ }
+}
+
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) {
-  
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { ... }
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) { ... }
+// /* Small devices (tablets, 768px and up) */
+// @media (min-width: @screen-sm-min) {
+//   
+// }
+// 
+// /* Medium devices (desktops, 992px and up) */
+// @media (min-width: @screen-md-min) { ... }
+// 
+// /* Large devices (large desktops, 1200px and up) */
+// @media (min-width: @screen-lg-min) { ... }
