@@ -23,15 +23,19 @@
   margin: 0;
   padding: 0;
   font-size: 20px;
-  color: #595959;
+  color: #4d4d4d;
+  font-weight: normal;
 }
 
 .container {
   width: 100%;
 }
- 
+.min-width-768 {
+  display: none;
+}
+
 // Header navigation
-.nav ul li {
+.nav .min-width-768 li {
   display: inline-block;
   line-height: none;
   padding: 30px 30px 30px 0px;
@@ -40,6 +44,14 @@
   }
 }
 
+.nav .phoneMenu ul {
+  list-style: none;
+  display: none;
+  li a {
+    color: black;
+    text-decoration: none;
+  }
+}
 // about page css
 .aboutImg {
   padding: 20px;
@@ -197,14 +209,26 @@
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
-
-// /* Small devices (tablets, 768px and up) */
+@media only screen and (min-width : 768px) {
+  .fa.phoneMenu {
+    display: none;    
+  }
+  .min-width-768 {
+    display: block;
+  }
+   
+}
+/* Small devices (tablets, 768px and up) */
 // @media (min-width: @screen-sm-min) {
-//   
+//    
 // }
-// 
-// /* Medium devices (desktops, 992px and up) */
-// @media (min-width: @screen-md-min) { ... }
-// 
-// /* Large devices (large desktops, 1200px and up) */
-// @media (min-width: @screen-lg-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+// @media (min-width: @screen-md-min) {
+//    
+//  }
+
+/* Large devices (large desktops, 1200px and up) */
+// @media (min-width: @screen-lg-min) { 
+//    
+// }
