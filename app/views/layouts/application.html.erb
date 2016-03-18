@@ -13,19 +13,11 @@
 <body class="container">
   <div id='header' class="row nav">
     <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
-      <i class="fa fa-bars phoneMenu">
-        <ul >
-          <li><%= link_to "Welcome", root_path %></li>
-          <li><%= link_to "About", about_path %></li>
-          <li><%= link_to "Portfolio", portfolio_path %></li>
-          <li><%= link_to "Resume", resume_path %></li>
-        </ul>
-      </i>
-      <ul class="min-width-768">
-        <li><%= link_to "Welcome", root_path %></li>
-        <li><%= link_to "About", about_path %></li>
-        <li><%= link_to "Portfolio", portfolio_path %></li>
-        <li><%= link_to "Resume", resume_path %></li>
+      <ul>
+        <li class="<%=is_active('welcome')%>"><%= link_to "Welcome", root_path %></li>
+        <li class="<%=is_active('about')%>"><%= link_to "About", about_path %></li>
+        <li class="<%=is_active('portfolio')%>"><%= link_to "Portfolio", portfolio_path %></li>
+        <li class="<%=is_active('resume')%>"><%= link_to "Resume", resume_path %></li>
       </ul>
     </div>
 
