@@ -22,9 +22,10 @@ body {
   // font-family: 'Roboto', sans-serif;
   margin: 0 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 18px;
   color: #4d4d4d;
   font-weight: normal;
+  line-height: 1.5em;
 }
 
 .container {
@@ -186,6 +187,10 @@ body {
 
 @media print {
  /* All your print styles go here */
+ body {
+   font-size: 18px;
+   line-height: 1.2em;
+ }
  #header, #footer { display: none !important; }
  #resumeContact {
    display: none;
