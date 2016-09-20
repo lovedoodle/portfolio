@@ -33,17 +33,16 @@ body {
 
 //Header CSS
 .header {
-  max-width: 1100px;
   margin: 0 auto;
-  width: 100%;
+  width: 96%;
   height: 30%;
   ul {
     margin: 0;
     padding: 0;
     li {
       display: inline-block;
-      // line-height: none;
-      padding: 30px 15px;
+      padding: 15px 8px;
+
       a {
         color: #b3b3b3;
         text-decoration: none;
@@ -59,10 +58,11 @@ body {
 .content {
   width: 100%;
   clear: both;
+  // min-height: 800px;
   .mainContent {
-    max-width: 1100px;
+    // max-width: 1100px;
     margin: 0 auto;
-    // width: 100%;
+    width: 96%;
     height: auto;
     position: relative;
     padding: 10px;
@@ -99,21 +99,23 @@ body {
 
 // about page css
 .aboutPage {
-  padding: 10px;
+  // width: 100%;
+  min-height: 600px;
   .aboutImg {
-    display: inline-block;
-    width: 30%;
-    margin-right: 16px;
+    // display: inline-block;
+    // width: 100%;
+    // margin-right: 16px;
+    margin-bottom: 10px;
     img {
       width: 100%;
       height: auto;
     }
-    float: left;
+    // float: left;
 
   }
   .aboutText {
-    display: inline-block;
-    width: 60%;
+    // display: inline-block;
+    // width: 60%;
   }
 
 }
@@ -122,7 +124,7 @@ body {
 // welcome page css
 
 .welcomeJumbo {
-  height: 800px;
+  height: 650px;
   background: url("welcome/welcome.jpg");
   background-repeat:no-repeat;
   // background-color: (0,0,0,0.5);
@@ -208,20 +210,19 @@ h3 {
 // portfolio page css
 
 .projectDiv {
-  padding: 8px;
+  // padding: 8px;
   height: 450px;
-  width: 33%;
-  float: left;
+  width: 100%;
   a {
     color: #4d4d4d;
     text-decoration: none;
   }
   .projectsImg {
-    width: 98%;
+    width: 100%;
     height: 60%;
     img {
-      width: 99%;
-      height: 99%;
+      width: 100%;
+      height: 100%;
       // max-width: 450px;
       // max-height: 400px;
     }
@@ -261,53 +262,80 @@ h3 {
 }
 
 // * Extra small devices (phones, less than 768px) */
-// * No media query since this is the default in Bootstrap */
-@media(max-width : 490px) {
-  .fa.phoneMenu {
-    display: none;
-  }
-  .min-width-768 {
-    display: block;
-  }
+// // * No media query since this is the default in Bootstrap */
+// @media(max-width : 490px) {
+//   .fa.phoneMenu {
+//     display: none;
+//   }
+//   .min-width-768 {
+//     display: block;
+//   }
+//
+// * Small devices (tablets, 768px and up) *
+// @media(max-width: 768px) {
+//  .mainContent {
+//    width: 96%;
+//    margin: 0 auto;
+//  }
+// //projects page
+//  .projectDiv {
+//    width: 50%;
+//  }
+// }
+//
+@media(min-width: 769px){
   .header {
     ul li {
-      padding: 15px 8px;
+      padding: 30px 15px;
     }
   }
-  .mainContent {
-    width: 96%;
-    margin: 0 auto;
-  }
-//projects page
   .projectDiv {
-    width: 100%;
+    width: 50%;
+    float:left;
+    padding: 10px;
   }
   .aboutPage {
-    padding: 20px;
     .aboutImg {
-      margin-bottom: 16px;
-      width: 98%;
-      img {
-        width: 100%;
-        height: auto;
-      }
-
+      width: 35%;
+      padding: 10px;
+      float: left;
     }
     .aboutText {
-      display: inline-block;
-      width: 98%;
+      width: 65%;
+      padding: 10px;
+      float: left;
     }
+
+  }
+}
+
+@media(min-width: 1000px) {
+  .header {
+    max-width: 1100px;
+
   }
 
- }
-// * Small devices (tablets, 768px and up) *
-@media(max-width : 768px) {
- .mainContent {
-   width: 96%;
-   margin: 0 auto;
- }
-//projects page
- .projectDiv {
-   width: 50%;
- }
+  .footer {
+    max-width: 1100px;
+  }
+  .mainContent {
+    max-width: 1100px;
+  }
+  .projectDiv {
+    width: 33%;
+    padding: 10px;
+    float: left;
+  }
+}
+
+@media(min-width: 1500px){
+  .welcomeJumbo {
+    height: 1000px;
+  }
+  .aboutPage {
+    min-height: 800px;
+  }
+  .resumeWrap {
+    min-height: 800px;
+  }
 }
