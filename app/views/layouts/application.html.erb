@@ -8,31 +8,28 @@
   <%= csrf_meta_tags %>
   <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,500,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  
-</head>
-<body class="container">
-  <div id='header' class="row nav">
-    <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
-      <ul>
-        <li class="<%=is_active('welcome')%>"><%= link_to "Welcome", root_path %></li>
-        <li class="<%=is_active('about')%>"><%= link_to "About", about_path %></li>
-        <li class="<%=is_active('portfolio')%>"><%= link_to "Portfolio", portfolio_path %></li>
-        <li class="<%=is_active('resume')%>"><%= link_to "Resume", resume_path %></li>
-      </ul>
-    </div>
 
+</head>
+<body>
+  <div class="header">
+    <ul>
+      <li class="<%=is_active('welcome')%>"><%= link_to "Welcome", root_path %></li>
+      <li class="<%=is_active('about')%>"><%= link_to "About", about_path %></li>
+      <li class="<%=is_active('portfolio')%>"><%= link_to "Portfolio", portfolio_path %></li>
+      <li class="<%=is_active('resume')%>"><%= link_to "Resume", resume_path %></li>
+    </ul>
   </div>
 
-  <div class="row main">
+  <div class="content">
     <%= yield %>
   </div>
 
-  <div class="row">
-    <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1" id="footer">
-      <a href="https://github.com/lovedoodle"><i class="fa fa-github-alt footerFa"></i></a>
-      <a href='https://www.linkedin.com/in/jingwait'><i class="fa fa-linkedin footerFa"></i></a>
-      <a href='https://twitter.com/JingWait'><i class="fa fa-twitter footerFa"></i></a>
-    </div>
+  <div class="footer">
+
+    <a href="https://github.com/lovedoodle"><i class="fa fa-github-alt footerFa"></i></a>
+    <a href='https://www.linkedin.com/in/jingwait'><i class="fa fa-linkedin footerFa"></i></a>
+    <a href='https://twitter.com/JingWait'><i class="fa fa-twitter footerFa"></i></a>
+
   </div>
 </body>
 </html>

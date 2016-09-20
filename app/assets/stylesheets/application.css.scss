@@ -20,7 +20,7 @@
 body {
   box-sizing: border-box;
   // font-family: 'Roboto', sans-serif;
-  margin: 0 0;
+  margin: 0;
   padding: 0;
   font-size: 18px;
   color: #4d4d4d;
@@ -28,28 +28,60 @@ body {
   line-height: 1.5em;
 }
 
-.container {
+
+//Header CSS
+.header {
+  max-width: 1300px;
+  margin: 0 auto;
   width: 100%;
-}
-
-
-// Header navigation
-.nav ul li {
-  display: inline-block;
-  line-height: none;
-  padding: 30px 30px 30px 0px;
-  a {
-    color: #b3b3b3;
-    text-decoration: none;
-    font-size: 20px;
+  ul li {
+    display: inline-block;
+    line-height: none;
+    padding: 30px 30px 30px 0px;
+    a {
+      color: #b3b3b3;
+      text-decoration: none;
+      font-size: 20px;
+    }
+    a:hover {
+      color: #ff00ff;
+    }
   }
-  a:hover {
-    color: #4d4d4d;
+}
+//content CSS
+.content {
+  width: 100%;
+  clear: both;
+  .mainContent {
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+}
+// footer css
+.footer {
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+  a{
+    float: right;
+    margin: 10px 0px;
+
+    i {
+      font-size: 30px;
+      padding: 10px;
+      color: #b3b3b3;
+    }
+    i:hover {
+      color: #4d4d4d;
+      font-size: 40px;
+    }
   }
 }
 
 .active a {
-  color: #4d4d4d !important;
+  color: #ff00ff !important;
 }
 
 
@@ -175,23 +207,7 @@ h3 {
 
 }
 
-// footer css
-#footer {
-  a{
-    float: right;
-    margin: 10px 0px;
 
-    i {
-      font-size: 30px;
-      padding: 10px;
-      color: #b3b3b3;
-    }
-    i:hover {
-      color: #4d4d4d;
-      font-size: 40px;
-    }
-  }
-}
 
 
 
@@ -201,7 +217,7 @@ h3 {
    font-size: 18px;
    line-height: 1.2em;
  }
- #header, #footer { display: none !important; }
+ .header, .footer { display: none !important; }
  #resumeContact {
    display: none;
  }
