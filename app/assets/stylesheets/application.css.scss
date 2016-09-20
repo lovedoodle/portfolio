@@ -22,7 +22,7 @@ body {
   // font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  font-size: 18px;
+  font-size: 14px;
   color: #4d4d4d;
   font-weight: normal;
   line-height: 1.5em;
@@ -31,7 +31,7 @@ body {
 
 //Header CSS
 .header {
-  max-width: 1300px;
+  max-width: 1100px;
   margin: 0 auto;
   width: 100%;
   ul li {
@@ -53,17 +53,22 @@ body {
   width: 100%;
   clear: both;
   .mainContent {
-    max-width: 1300px;
+    max-width: 1100px;
     margin: 0 auto;
-    width: 100%;
+    // width: 100%;
     height: auto;
+    position: relative;
+    padding: 10px;
   }
 }
 // footer css
 .footer {
-  max-width: 1300px;
+  max-width: 1100px;
+  // display: block;
+  clear: both;
   margin: 0 auto;
   width: 100%;
+  padding: 10px;
   a{
     float: right;
     margin: 10px 0px;
@@ -86,58 +91,72 @@ body {
 
 
 // about page css
-.aboutImg {
-  width: 100%;
-  height: 100%;
-  margin: 0 0 10px 0;
-  // max-width: 400px;
-  // max-height: 500px;
-}
-.aboutText {
-  // max-width: 400px;
+.aboutPage {
+  padding: 10px;
+  .aboutImg {
+    display: inline-block;
+    width: 30%;
+    margin-right: 16px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    float: left;
+
+  }
+  .aboutText {
+    display: inline-block;
+    width: 60%;
+  }
 
 }
+
 
 // welcome page css
 
-.indexJumbo {
-  height: 600px;
+.welcomeJumbo {
+  height: 800px;
   background: url("welcome/welcome.jpg");
   background-repeat:no-repeat;
   // background-color: (0,0,0,0.5);
   background-size: cover;
   background-position: bottom;
-  padding: 1% 5%;
-  span {
-    display: block;
-    clear: both;
-    margin-top: 20px;
-    padding: 15px;
-    float: right;
-    background-color: black;
-    a {
-      font-size: 20px;
-      color: white;
-      // font-weight: lighter;
-    }
-    a:hover {
-      text-decoration: none;
-    }
-  }
-  #viewWorks:hover {
-    background-color: #ff00ff;
-    cursor: pointer;
-
-  }
-  h1 {
-    // margin-top: 30px;
-    text-align: right;
-    color: white;
-    font-size: 40px;
+  position: relative;
+  .welcomeBanner {
     width: 60%;
-    float: right;
-    clear: both;
+    text-align: right;
+    position: absolute;
+    right: 40px;
+    top: 60px;
+    h1 {
+      color: white;
+      font-size: 40px;
+    }
+    #viewWorks {
+      display: block;
+      width: auto;
+      margin-top: 20px;
+      padding: 15px 20px;;
+      float: right;
+      background-color: black;
+      a {
+        font-size: 20px;
+        color: white;
+        // font-weight: lighter;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+    }
+    #viewWorks:hover {
+      background-color: #ff00ff;
+      cursor: pointer;
+
+    }
   }
+
+
+
 }
 
 // resume page css
@@ -227,17 +246,34 @@ h3 {
  }
 }
 
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-// @media only screen and (min-width : 480px) {
-//   .fa.phoneMenu {
-//     display: none;
-//   }
-//   .min-width-768 {
-//     display: block;
-//   }
-//
-// }
+// * Extra small devices (phones, less than 768px) */
+// * No media query since this is the default in Bootstrap */
+@media only screen and (max-width : 480px) {
+  .fa.phoneMenu {
+    display: none;
+  }
+  .min-width-768 {
+    display: block;
+  }
+
+  .aboutPage {
+    padding: 20px;
+    .aboutImg {
+      margin-bottom: 16px;
+      width: 98%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+    }
+    .aboutText {
+      display: inline-block;
+      width: 98%;
+    }
+  }
+
+ }
 /* Small devices (tablets, 768px and up) */
 // @media (min-width: @screen-sm-min) {
 //
