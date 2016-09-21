@@ -9,6 +9,9 @@ Rails.application.routes.draw do
   get '/about' => "pages#about"
   get '/contact' => 'pages#contact'
   get '/resume' => 'pages#resume'
+  get '/analytics' => 'pages#analytics'
+  get '/moderation' => 'pages#moderation'
+  get '/trigger' => 'pages#trigger'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

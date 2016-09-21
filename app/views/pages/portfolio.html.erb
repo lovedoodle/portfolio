@@ -1,7 +1,7 @@
 <div class="mainContent">
   <!-- <div class="row"> -->
   <div class="projectDiv">
-    <a href="https://angularpizzaplanet.herokuapp.com">
+    <%= link_to(analytics_path) do %>
       <div class="projectsImg">
         <img src="portfolio/analyticImg.png" alt="" />
       </div>
@@ -12,12 +12,11 @@
           A pet project I did with Yeoman/Angular practicing two-way data binding, custom directives, and inline editing.
         </p>
       </div>
-    </a>
-
+    <% end %>
   </div>
 
   <div class="projectDiv">
-    <a href="https://angularpizzaplanet.herokuapp.com">
+    <%= link_to(moderation_path) do %>
       <div class="projectsImg">
         <img src="portfolio/mod_q_2.png" alt="" />
       </div>
@@ -28,11 +27,12 @@
           A pet project I did with Yeoman/Angular practicing two-way data binding, custom directives, and inline editing.
         </p>
       </div>
-    </a>
-
+    <% end %>
   </div>
+
+
   <div class="projectDiv">
-    <a href="https://angularpizzaplanet.herokuapp.com">
+    <%= link_to(trigger_path) do %>
       <div class="projectsImg">
         <img src="portfolio/follow_1.png" alt="" />
       </div>
@@ -43,8 +43,7 @@
           A pet project I did with Yeoman/Angular practicing two-way data binding, custom directives, and inline editing.
         </p>
       </div>
-    </a>
-
+    <% end %>
   </div>
 
   <div class="projectDiv">
