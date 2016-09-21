@@ -241,8 +241,15 @@ h3 {
   }
 
 }
+//intership portfolio pages css
 
+.internImg {
 
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
 
 
 
@@ -307,6 +314,8 @@ h3 {
       float: left;
     }
 
+
+
   }
 }
 
@@ -321,6 +330,10 @@ h3 {
   }
   .mainContent {
     max-width: 1100px;
+    .internIntro {
+      width: 60%;
+      margin: auto;
+    }
   }
   .projectDiv {
     width: 33%;
