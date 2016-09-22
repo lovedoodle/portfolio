@@ -136,14 +136,16 @@ body {
   background-position: bottom;
   position: relative;
   .welcomeBanner {
-    width: 60%;
+    width: 100%;
     text-align: right;
     position: absolute;
-    right: 40px;
+    right: 10px;
+    // right: 40px;
     top: 60px;
     h1 {
       color: white;
-      font-size: 40px;
+      // font-size: 40px;
+      font-size: 30px;
     }
     #viewWorks {
       display: block;
@@ -276,32 +278,19 @@ h3 {
  }
 }
 
-// * Extra small devices (phones, less than 768px) */
-// // * No media query since this is the default in Bootstrap */
-// @media(max-width : 490px) {
-//   .fa.phoneMenu {
-//     display: none;
-//   }
-//   .min-width-768 {
-//     display: block;
-//   }
-//
-// * Small devices (tablets, 768px and up) *
-// @media(max-width: 768px) {
-//  .mainContent {
-//    width: 96%;
-//    margin: 0 auto;
-//  }
-// //projects page
-//  .projectDiv {
-//    width: 50%;
-//  }
-// }
-//
 @media(min-width: 769px){
   .header {
     ul li {
       padding: 30px 15px;
+    }
+  }
+  .welcomeJumbo .welcomeBanner {
+    width: 60%;
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    h1 {
+      font-size: 40px;
     }
   }
   .projectDiv {
