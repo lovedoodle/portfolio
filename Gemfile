@@ -23,10 +23,10 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'font-awesome-sass'
- 
+
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
- 
+
 gem 'rails_12factor', group: :production
 gem 'pry'
 # Use ActiveModel has_secure_password
@@ -51,4 +51,4 @@ group :development do
   gem 'spring'
 end
 
-ruby "2.1.2"
+ruby "2.3.1"
